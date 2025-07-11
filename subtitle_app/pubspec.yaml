@@ -1,18 +1,47 @@
-name: subtitle_app
-description: Video'dan altyazı çıkartan Flutter app
-publish_to: "none"
+name: video_subtitle_processor
+description: A Flutter application for processing videos with subtitles
+version: 1.0.0+1
 
 environment:
-  sdk: ">=3.3.0 <4.0.0"
+  sdk: '>=3.0.0 <4.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
+  
+  # HTTP requests
   dio: ^5.4.0
+  
+  # File operations
   file_picker: ^6.1.1
   path_provider: ^2.1.2
-  permission_handler: ^11.3.1
+  
+  # Video player
+  video_player: ^2.8.2
+  chewie: ^1.7.4
+  
+  # Permissions
+  permission_handler: ^11.2.0
+  
+  # UI
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
 
 flutter:
   uses-material-design: true
-
+  
+  # Assets
+  # assets:
+  #   - images/
+  
+  # Fonts
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic

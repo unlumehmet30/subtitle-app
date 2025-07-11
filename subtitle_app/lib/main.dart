@@ -11,11 +11,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Subtitle App',
-      theme: ThemeData(primarySwatch: Colors.blue),
+      title: 'Video Subtitle Processor',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+        useMaterial3: true,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.blue,
+          foregroundColor: Colors.white,
+        ),
+      ),
       home: const VideoUploadScreen(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
-
 
