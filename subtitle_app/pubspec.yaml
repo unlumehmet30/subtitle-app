@@ -13,7 +13,7 @@ dependencies:
   dio: ^5.4.0
   
   # File operations
-  file_picker: ^6.1.1
+  file_picker: ^10.2.0
   path_provider: ^2.1.2
   
   # Video player
